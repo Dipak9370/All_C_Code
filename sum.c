@@ -1,26 +1,48 @@
 #include<stdio.h>
 
-int Addition(int a,int b)
-    {
-        int c;
-        c=a+b;
-        return c;
-    }
+/////////////////////////////////////////////////////////////////////
+//
+//  Function Name:  Addition
+//  Description :      Used to perform addition of 2 numbers
+//  Input :              Integer, Integer
+//  Output :            Integer
+//  Date :               18/12/2022
+//  Author :            Dipak Bharade
+//
+/////////////////////////////////////////////////////////////////////
 
-int main()
+int Addition(int iValue1, int iValue2)
 {
-    int a=0;
-    int b=0;
-    int c=0;
-
-    printf("Enter the 1st number:");
-    scanf("%d",&a);
-
-    printf("Enter the 2st number:");
-    scanf("%d",&b);
-
-    c=Addition(a,b);
-    printf("Sum= %d\n",c);
-    return 0;
-    
+    int iAns = 0;
+    iAns = iValue1 + iValue2;
+    return iAns;
 }
+
+/////////////////////////////////////////////////////////////////////
+// Write a program to perform addition of 2 numbers
+/////////////////////////////////////////////////////////////////////
+
+ int main()
+ {
+    int iNo1 = 0;
+    int iNo2 = 0;
+    int iNo3 = 0;
+
+    printf("Enter first number\n");
+    scanf("%d",&iNo1);
+
+    printf("Enter second number\n");
+    scanf("%d",&iNo2);
+
+    iNo3 = Addition(iNo1, iNo2);
+    printf("Addition is : %d\n",iNo3);
+
+    return 0;
+ }
+
+/////////////////////////////////////////////////////////////////////
+//
+//  Input :         11      10
+//  Output :       21
+//
+/////////////////////////////////////////////////////////////////////
